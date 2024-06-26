@@ -3,10 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>tonaprint.co</title>
+    <style>
+      html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;  /* Horizontally center */
+      align-items: center;      /* Vertically center */
+      background-color: black;  
+      }
+
+      a {
+    text-decoration: none; /* No text decoration */
+    color: yellowgreen;    /* Set color to yellowgreen */
+    font-style: italic;    /* Normal font style initially */
+    transition: all 0.5s ease; /* Transition effect with a duration of 0.5s */
+}
+
+a:hover {
+    font-style: italic; /* Italic font style on hover */
+    font-weight: bold;
+}
+
+    </style>
+
+
   </head>
+  
   <body>
-    <button>
+<!--     <button class="center-button">
+      <a href="../config/html/index.html">LINK TO THE TONA WEBSITE</a>
+    </button> -->
+      <button style="
+        background-color: black;
+        color: green;
+        border: 2px solid green;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    " 
+    onmouseover="this.style.backgroundColor='green'; this.style.color='black'; this.style.borderColor='black'; this.style.boxShadow='0 8px 16px rgba(0, 200, 0, 0.4)';"
+    onmouseout="this.style.backgroundColor='black'; this.style.color='green'; this.style.borderColor='green'; this.style.boxShadow='0 4px 8px rgba(0, 255, 0, 0.2)';">
       <a href="../config/html/index.html">LINK TO THE TONA WEBSITE</a>
     </button>
   </body>
