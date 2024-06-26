@@ -1,0 +1,275 @@
+html {
+  width: webkit-fill-available;
+}
+body {
+  background-color: rgb(0, 10, 0);
+  /* background-color: rgb(196, 164, 164); */
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+nav {
+  background-color: #000;
+  z-index: 1000;
+}
+.navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  width: 50%;
+  white-space: wrap;
+  overflow: hidden;
+  animation: typing 3s, cursor 0.4s step-end infinite alternate;
+}
+p.asideText {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  width: 50%;
+  white-space: wrap;
+  overflow: hidden;
+  animation: typing 3s, cursor 0.4s step-end infinite alternate;
+}
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
+.gallery img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 10px;
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+.gallery2 img,
+img.gallery {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+#personal-details {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+#personal-details2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: italic;
+}
+/* .les-img {
+    width: 600px;
+    height: 500px;
+  } */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+.role {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-top: 15px;
+  color: rgb(173, 168, 168);
+}
+
+.header1 {
+  font-size: 2.5rem;
+}
+.number-value {
+  font-size: 6rem;
+}
+.number-value sup {
+  font-size: 0.5em;
+  font-weight: lighter;
+  /* display: flex; */
+  align-self: bottom;
+}
+.number-value,
+.inline-paragraph {
+  display: inline-block;
+  vertical-align: middle; /* Adjust as needed for proper alignment */
+  margin: 0; /* Remove default margin for better alignment */
+}
+.inline-paragraph {
+  font-size: 17px;
+  color: rgb(218, 212, 212);
+  font-weight: 100;
+}
+#about-me {
+  margin-top: 30px;
+}
+.col-md-8 {
+  display: inline-block;
+}
+.skills-header {
+  font-size: 1.5rem;
+  transition: all 2s;
+}
+.skills-paragraph {
+  font-size: 1rem;
+  font-weight: 100;
+  transition: all 2s;
+}
+#photograph {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px #4a64a040, 0 0 0 30px black, 0 0 0 32px #1e4ebf40;
+}
+.quotes {
+  color: #526dad;
+}
+.recommendation {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+
+.name,
+.in-work-paragraph {
+  color: #526dad;
+}
+.date {
+  font-weight: 100;
+  color: rgb(183, 174, 174);
+}
+#image-background {
+  background-image: url("amir-seilsepour-5vg_SarQimA-unsplash.jpg");
+  background-size: cover;
+}
+#recommend {
+  font-size: 1.3rem;
+}
+#github {
+  color: rgb(253, 253, 253);
+}
+#linkedin {
+  color: rgb(17, 84, 160);
+}
+#instagram {
+  color: rgb(237, 8, 54);
+}
+/* #contact1, #contact2, #contact3{
+      border: 3px solid #1e4ebf40;
+      border-radius: 5px;
+  } */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden1 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+.show1 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.show2 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden3 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+.show3 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (width <= 400px) {
+  .number-value {
+    font-size: 4rem;
+  }
+  .inline-paragraph {
+    font-size: 15px;
+  }
+  .header1 {
+    font-size: 2rem;
+  }
+  .role {
+    font-size: 1.5rem;
+  }
+  .name,
+  .in-work-paragraph {
+    font-size: 1rem;
+  }
+  .date {
+    font-size: 15px;
+  }
+  .skills-header {
+    font-size: 1.2rem;
+  }
+  .skills-paragraph {
+    font-size: 1rem;
+  }
+  .inline-paragraph {
+    font-size: 15px;
+  }
+}
+section {
+  overflow-x: hidden;
+}
+span {
+  overflow-x: hidden;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: greenyellow;
+  text-decoration: none;
+}
+.gallery123 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery123 img {
+  width: 100%;
+  height: auto;
+}
+.gallery123-item {
+  padding: 5px;
+  flex: 1 0 33%;
+}
